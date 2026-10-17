@@ -4,6 +4,14 @@ Bản demo GitHub Pages hoạt động trên trình duyệt, không cần API ke
 
 ## Bật website trong GitHub
 
+Có thể kiểm tra và sửa cấu hình trực tiếp bằng API, sử dụng xác thực GitHub CLI hiện có:
+
+```bash
+npm run pages:configure
+```
+
+Lệnh này cần truy cập mạng tới `api.github.com` và quyền quản trị Pages phù hợp. Lệnh kiểm tra cấu hình trước, chọn `gh-pages` ở thư mục gốc, giữ nguyên tên miền tùy chỉnh nếu có và kiểm tra trạng thái build. Đường dẫn in ra lấy từ phản hồi GitHub; trạng thái cấu hình thành công chưa thay thế việc mở và kiểm tra website. Lỗi mạng 403 của proxy cần được giải quyết trong cài đặt môi trường, không phải bằng cách gửi token trong chat.
+
 Sau khi nhánh `gh-pages` đã được đẩy lên kho `leetua333-dev/ZALO`:
 
 1. Mở kho trên GitHub → **Settings → Pages**.
