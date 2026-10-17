@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-demo/
+.data/
+.env
+*.log
+*.tsbuildinfo
+.DS_Store
+test-results/
